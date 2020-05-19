@@ -1,0 +1,161 @@
+$white:#ECECEC;
+$black:rgb(54, 54, 54);
+$orange:#cc6600;
+$navi:#3b3b3bc0;
+.firstSection{
+    background-image: url(./imgs/Bajovita-first-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{background-color: $navi;
+        text-align: center;
+        width: 60%;
+        font-size: 2.5rem;
+        line-height: 6rem;
+        li{color: $orange;
+        }
+        li:hover{ color: $white;
+            
+            i{color: $orange;
+            }}
+        i{color: $white;}
+       
+    }
+    
+}
+.secondSection{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+justify-content: center;
+align-items:center;
+    text-align: center;
+    padding-top: 2vh;
+    ul{display: flex;
+        flex-direction: column;
+        justify-content: center;
+    align-items: center;}
+
+}
+.prehliadka{h2{text-decoration: underline;
+            color:$orange}
+        h2:hover{text-decoration: overline;}}
+.socialNetworks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    i{margin: 10px;}
+    i:hover{color:$orange;
+            cursor: pointer;}
+        }
+.fixed-bg{  background-image: url(./imgs/fixed-bg-coffe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+width: 100%;
+height: 40vh;}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     height: 100%;
+     margin: 20vh 5vh 20vh 5vh;}
+.projects-group{display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                grid-gap: 15px;
+                justify-content: center;
+                align-items: center;
+    ul{border: 2px $white solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        height: 100%;
+        li{
+    img{width: 100%;
+        height: 100%;}}
+       
+}
+}
+.reviews{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+.reviews-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+   
+    iframe{
+        width:500px; 
+    height:200px;
+    border:none;
+    overflow:hidden;
+        }
+}
+@media screen and (max-width:1030px){
+    .fixed-bg{display: none;}
+
+    .reviews-group{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .secondSection{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+align-items:center;
+align-self: center;
+        border-bottom: 2px solid $white;
+            padding-top: 0vh;
+            margin-top: 0vh;
+           
+                }
+}
+@media screen and (max-width:800px){
+    .reviews{
+        height: 100%;
+    }
+    
+    .firstSection{ul{
+                    width:80% ;
+    }}
+}
+@media screen and (max-width:780px){
+    .projects-group{display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        justify-content: center;
+        align-items: center;
+}
+}
+@media screen and (max-width:420px){
+    .secondSection{grid-template-columns: 100%;
+        justify-content: center;
+        align-items:center;}
+    .projects{
+         height:100%;
+         margin: 0vh 0vh 0vh 0vh;}
+    
+    .reviews{
+        iframe{width: 100%;}
+    }
+    .secondSection{
+        ul{
+            li{width: 100%;}
+        }
+    }
+}

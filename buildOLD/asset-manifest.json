@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2cf1b9bd.chunk.css",
+    "main.js": "/static/js/main.c0436cb0.chunk.js",
+    "main.js.map": "/static/js/main.c0436cb0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ad9a9173.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ad9a9173.js.map",
+    "static/css/2.3ab4c7df.chunk.css": "/static/css/2.3ab4c7df.chunk.css",
+    "static/js/2.f203c060.chunk.js": "/static/js/2.f203c060.chunk.js",
+    "static/js/2.f203c060.chunk.js.map": "/static/js/2.f203c060.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6164df372dd8f3091b2cb274adc29910.js": "/precache-manifest.6164df372dd8f3091b2cb274adc29910.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.3ab4c7df.chunk.css.map": "/static/css/2.3ab4c7df.chunk.css.map",
+    "static/css/main.2cf1b9bd.chunk.css.map": "/static/css/main.2cf1b9bd.chunk.css.map",
+    "static/js/2.f203c060.chunk.js.LICENSE.txt": "/static/js/2.f203c060.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/static/media/fixed-bg-coffe.50aee05b.jpg",
+    "static/media/bistro.css": "/static/media/backgroundBajovita.7be83cfe.jpeg",
+    "static/media/bajovita.jpeg": "/static/media/bajovita.b774cd07.jpeg",
+    "static/media/bakery.jpeg": "/static/media/bakery.47b216e5.jpeg",
+    "static/media/bistro-sk-300x300.png": "/static/media/bistro-sk-300x300.04538639.png",
+    "static/media/bistroBG.jpeg": "/static/media/bistroBG.cd090a15.jpeg",
+    "static/media/burger.jpeg": "/static/media/burger.074b3e4e.jpeg",
+    "static/media/caffe1.jpeg": "/static/media/caffe1.2bcbc023.jpeg",
+    "static/media/cake2.jpeg": "/static/media/cake2.2d0922bc.jpeg",
+    "static/media/fixed-bg-meat.jpg": "/static/media/fixed-bg-meat.8dd3a3cc.jpg",
+    "static/media/fullmenu.jpeg": "/static/media/fullmenu.4e4b0645.jpeg",
+    "static/media/health-food.jpeg": "/static/media/health-food.45930766.jpeg",
+    "static/media/menu1.jpg": "/static/media/menu1.4084b362.jpg",
+    "static/media/noe.jpeg": "/static/media/noe.2fe6c259.jpeg",
+    "static/media/smoothie.jpg": "/static/media/smoothie.a9d56263.jpg",
+    "static/media/vino.jpg": "/static/media/vino.f9c0f475.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad9a9173.js",
+    "static/css/2.3ab4c7df.chunk.css",
+    "static/js/2.f203c060.chunk.js",
+    "static/css/main.2cf1b9bd.chunk.css",
+    "static/js/main.c0436cb0.chunk.js"
+  ]
+}

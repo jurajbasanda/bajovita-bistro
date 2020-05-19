@@ -1,0 +1,101 @@
+$white:#ECECEC;
+$black:rgb(54, 54, 54);
+$orange:#cc6600;
+$navi:#302f2fc9;
+  .nav_links950{display: none;}
+  .burger{display: none;}
+nav{position: fixed;
+  top: 0;
+  background-color: $navi;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin: auto;
+    height: 90px;
+    width:100% ;
+    color: white;
+    z-index: 999;
+  li{
+      font-weight: 400;
+      font-size: 18px;
+      color: $white;
+      
+
+    }
+
+  ul{list-style: none;}
+ 
+}
+.logo{
+    width: 10rem;
+    cursor: pointer;
+    img{width: 100%;}
+}
+.nav_links li{display: inline-block;
+                padding: 0 25px;}
+
+.nav_links li {transition:  all 0.3s  ease 0s;}
+.nav_links li:hover{color: $orange;
+                    text-decoration: overline;}
+
+//---------------------------------------Mobil version--------------------------------------------------
+@media screen and (max-width:1030px){ 
+
+   nav{width: 100%;
+  padding-left: 1vh;
+    padding-right: 1vh;}
+}
+@media screen and (max-width:950px){
+  .logo{z-index: 999;
+        width: 8rem;}
+  nav{width: 100%;
+    justify-content: space-between;
+    height: 10vh;
+    padding-left: 5vh;
+      padding-right: 5vh;}
+    .burger{z-index: 10;
+            display: block;
+            font-size: 20px;
+            cursor: pointer;}
+    .nav_links{display: none;}
+    .nav_links950 {z-index: 9;
+                display: block;
+                position: fixed;
+                text-align: center!important;
+                top: -2%;
+                left: -1%;
+                height: 100%;
+                width: 100%;
+                background-color: $black;
+                clip-path: circle(0vh);
+                -webkit-clip-path:circle(0vh);
+                transition: all 0.1s ease-out;
+                li{margin: 10vh;}
+             }
+    .open{
+      transition: all 0.1s ease-out;
+      clip-path: circle(100vh);
+      -webkit-clip-path:circle(100vh);
+          
+        }
+             
+
+}
+//---------------------------------------Mobil version 420px--------------------------------------------------
+@media screen and (max-width:420px){
+                        .nav_links950 {
+                                top: -3%;
+                                left: -1%;}
+}
+//---------------------------------------Mobil version 330px--------------------------------------------------
+@media screen and (max-width:330px){
+  nav{padding-left: 10px;
+      padding-right: 10px;}
+    .burger{z-index: 10;
+            display: block;
+            font-size: 20px;
+            cursor: pointer;}
+    .nav_links{display: none;}
+    
+
+}
