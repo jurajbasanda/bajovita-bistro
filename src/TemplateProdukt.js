@@ -14,7 +14,7 @@ export default function Produkty(props) {
     
     )
     return(
-        <section className='group'>
+        <section className='group' id='Produkty'>
     <h1>Produkty</h1>
         {content}
         </section>
