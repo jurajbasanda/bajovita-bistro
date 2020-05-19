@@ -2,12 +2,14 @@ import React,{useEffect} from 'react';
 import {BrowserRouter as BRouter,Switch,Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 import './app.css';
 //Links
 import NavIndex from './NavIndex';
 import Contact from './Contact';
 import Bistro from './Bistro';
+import NoMatch from './NoMatch';
 //Imgs
 import EshopImg from './imgs/bajovita.jpeg';
 import BajovitaImg from './imgs/bajovitaBistroLogo.jpg';
@@ -25,6 +27,9 @@ function App() {
       <Switch>
       <Route path='/' exact component={Home}/>
       <Route path='/bistro'  component={Bistro}/>
+      <Route path="*">
+            <NoMatch />
+          </Route>
       </Switch>
 
    </BRouter>
