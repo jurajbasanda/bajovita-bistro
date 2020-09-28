@@ -2,6 +2,7 @@ import React,{useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './bistro.css'
+
 //Links
 import Contact from './Contact';
 import Nav from './Nav';
@@ -15,8 +16,7 @@ import galleryImg3 from './imgs/burger.jpeg';
 import galleryImg4 from './imgs/cake2.jpeg';
 import galleryImg5 from './imgs/caffe1.jpeg';
 import bistroD from './imgs/bistro-sk.png'
-
-
+import FixedFood from './FixedFood';
 
 export default function Bistro() {
      //Alt ALL iamges
@@ -33,34 +33,33 @@ export default function Bistro() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
-    
     return (
         <main className='bistro'>
             <Nav/>
             <section className='firstB' >
+            <FixedFood></FixedFood>
             <ul data-aos="slide-right">
                     <li><h2>Kde nás nájdete</h2></li>
                     <li>Pavla Horova 21</li>
                     <li>Prešov</li>
                     <li>Slovakia</li>
-                    <li>T.č.: 0918 971 923</li>
+                    <li>T.č.: <a href='tel:+421918 971 923 '>0918 971 923</a></li>
                     <li>Email: <a href='mailto:bajovitabistro@gmail.com'> bajovitabistro@gmail.com</a></li>
                     <li className='socialNetworks'>
       <a href="https://www.facebook.com/bajovitaobchod/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/bajovitabistro/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i> </a>
     </li>
                 </ul>
-      
                  <ul data-aos="slide-right">
-                                        <li><h3>COVID-19 Zmenena otváracia doba</h3></li>
-                                        <li> Pondelok až Sobota 13:00-19:00 </li>
-                                            <li>Ne  15:00-19:00</li>
-                    <li><h2>Otváracie hodiny</h2></li>
+                 <li><h2>Otváracie hodiny</h2></li>
                     <li>Po-Štv	9:00-21:00</li>
                     <li>Pia	9:00-22:00</li>
                     <li>So	9:00-22:00</li>
-                    <li>Ne	15:00-20:00</li>
+                    <li>Ne	14:00-20:00</li>
+                                      {/**  <li><h3>COVID-19 Zmenena otváracia doba</h3></li>
+                                        <li> Pondelok až Sobota 13:00-19:00 </li>
+                                            <li>Ne  14:00-19:00</li> */}
+                    
                  </ul>
             </section>
             <section id='Onas' className='Onas'>
@@ -72,7 +71,6 @@ export default function Bistro() {
                  a popritom Vás s radosťou obslúžime pripravíme chutné jedlo (napr. Burger, wrap Lavaš),
                  nápoje, vynikajúcu na Slovensku praženú kávu, domáce koláče a čerstvo upečené pečivo, croissanty a pivo BERNARD</p>
                 <div className='fixed-bg' style={{backgroundImage: `url(${galleryImg0})`}}></div>
-
                
                 <ul data-aos="slide-up" className='prehliadka'>
         <li><a href='http://virtualis.sk/wp-content/uploads/Panoramas/bajovita2020/' target="_blank" rel="noopener noreferrer"><h2>Virtualna prehliadka Bistra</h2></a></li>

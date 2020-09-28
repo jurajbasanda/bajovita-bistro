@@ -19,20 +19,29 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom:15vh;
-
-    h2{margin: 20px;}
+    .item-text{order:1}
+    h2{
+        margin: 20px;}
     p{width:100%;}
-    img{width: 80%;
+    img{order:2;
+        width: 80%;
         -webkit-filter: drop-shadow(5px 5px 10px #502901);
     filter:         drop-shadow(5px 5px 10px #99530e)}
 }
+.smothie{.item-text{order:1;}
+        img{order:2;}}
+
+
 
 @media screen and (min-width:800px){
+    .smothie{.item-text{order:2;}
+        img{order:1;}}
 .group{
     padding-left:20vh ;
     padding-right:20vh ;
    
 }
+
 .item{
     flex-direction: row;
 
@@ -41,11 +50,13 @@
     p{min-width: 350px;
         max-width: 750px;}
 }
+
 .item-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 }
 

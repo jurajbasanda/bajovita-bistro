@@ -29,7 +29,7 @@ $navi:#3b3b3bc0;
 }
 .secondSection{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 justify-content: center;
 align-items:center;
@@ -66,68 +66,33 @@ height: 40vh;}
     justify-content: center;
     align-items: center;
      height: 100%;
-     margin: 20vh 5vh 20vh 5vh;}
+     margin: 10vh 5vh 15vh 5vh;}
 .projects-group{display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 25rem 25rem;
                 grid-template-rows: 1fr;
-                grid-gap: 15px;
-                justify-content: center;
-                align-items: center;
-    ul{border: 2px $white solid;
+                grid-gap: 10rem;
+                
+    ul{
+       
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         padding: 10px;
         text-align: center;
         height: 100%;
-        li{
-    img{width: 100%;
-        height: 100%;}}
-       
-}
-}
-.reviews{display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        img{width: 100%;;
+            }
     }
-.reviews-group{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 15px;
-   
-    iframe{
-        width:500px; 
-    height:200px;
-    border:none;
-    overflow:hidden;
-        }
 }
+
 @media screen and (max-width:1030px){
     .fixed-bg{display: none;}
-
-    .reviews-group{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
     .secondSection{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        justify-content: center;
-align-items:center;
-align-self: center;
-        border-bottom: 2px solid $white;
-            padding-top: 0vh;
-            margin-top: 0vh;
-           
                 }
 }
 @media screen and (max-width:800px){
-    .reviews{
-        height: 100%;
-    }
+ 
     
     .firstSection{ul{
                     width:80% ;
@@ -136,7 +101,6 @@ align-self: center;
 @media screen and (max-width:780px){
     .projects-group{display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 15px;
         justify-content: center;
         align-items: center;
@@ -144,18 +108,14 @@ align-self: center;
 }
 @media screen and (max-width:420px){
     .secondSection{grid-template-columns: 100%;
-        justify-content: center;
-        align-items:center;}
+        ul{
+            li{width: 100%;}
+        }}
     .projects{
          height:100%;
          margin: 0vh 0vh 0vh 0vh;}
     
     .reviews{
         iframe{width: 100%;}
-    }
-    .secondSection{
-        ul{
-            li{width: 100%;}
-        }
     }
 }

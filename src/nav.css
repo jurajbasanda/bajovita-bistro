@@ -19,7 +19,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  height: 90px;
+  height: 9vh;
   width: 100%;
   color: white;
   z-index: 999;
@@ -36,7 +36,7 @@ nav ul {
 }
 
 .logo {
-  width: 10rem;
+  width: 8rem;
   cursor: pointer;
 }
 
@@ -50,8 +50,8 @@ nav ul {
 }
 
 .nav_links li {
-  -webkit-transition: all 0.3s  ease 0s;
-  transition: all 0.3s  ease 0s;
+  -webkit-transition: all 0.1s  ease 0s;
+  transition: all 0.1s  ease 0s;
 }
 
 .nav_links li:hover {
@@ -70,14 +70,14 @@ nav ul {
 @media screen and (max-width: 950px) {
   .logo {
     z-index: 999;
-    width: 8rem;
+    width: 7rem;
   }
   nav {
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 10vh;
+    height: 8vh;
     padding-left: 5vh;
     padding-right: 5vh;
   }
@@ -95,7 +95,7 @@ nav ul {
     display: block;
     position: fixed;
     text-align: center !important;
-    top: -2%;
+    top: -3%;
     left: -1%;
     height: 100%;
     width: 100%;

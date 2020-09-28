@@ -23,18 +23,17 @@ const map = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10473.57561631
 
     return (
         <section id='Kontakt' className='contact'>
-            <h1>Kontaktujte nás</h1>
             <div className='socialNetworks'>
       <a href="https://www.facebook.com/bajovitaobchod/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/bajovitabistro/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-instagram"></i> </a>
     </div>
             <article className='contact-group-form' >
-            <iframe src={map} title={map} allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
-        <ul>
+            <iframe src={map} title={map} allowFullScreen="" aria-hidden="false" tabIndex="0" ></iframe>
+        {/*<ul>
         <li><h3>COVID-19 Zmenena otváracia doba</h3></li>
                <li> Pondelok až Sobota 13:00-19:00 </li>
-                <li>Ne  15:00-19:00</li>
-          </ul>
+                <li>Ne  14:00-19:00</li>
+        </ul>*/}
             <ul>
                     <li><h3>Kde nás nájdete</h3></li>
                     <li>Pavla Horova 21</li>
@@ -48,7 +47,7 @@ const map = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10473.57561631
                     <li>Po-Štv	9:00-21:00</li>
                     <li>Pia	9:00-22:00</li>
                     <li>So	9:00-22:00</li>
-                    <li>Ne	15:00-20:00</li>
+                    <li>Ne	14:00-20:00</li>
                  
                  </ul>
                  <a href="https://jurajbasanda.com" target="_blank" rel="noopener noreferrer" style={{fontSize:'0.9rem',margin:'10px',justifySelf:'flex-end'}}> Made by @Juraj Basanda</a>

@@ -11,7 +11,7 @@ nav{position: fixed;
     justify-content: space-around;
     align-items: center;
    margin: auto;
-    height: 90px;
+    height: 9vh;
     width:100% ;
     color: white;
     z-index: 999;
@@ -27,14 +27,14 @@ nav{position: fixed;
  
 }
 .logo{
-    width: 10rem;
+    width: 8rem;
     cursor: pointer;
     img{width: 100%;}
 }
 .nav_links li{display: inline-block;
                 padding: 0 25px;}
 
-.nav_links li {transition:  all 0.3s  ease 0s;}
+.nav_links li {transition:  all 0.1s  ease 0s;}
 .nav_links li:hover{color: $orange;
                     text-decoration: overline;}
 
@@ -47,10 +47,10 @@ nav{position: fixed;
 }
 @media screen and (max-width:950px){
   .logo{z-index: 999;
-        width: 8rem;}
+        width: 7rem;}
   nav{width: 100%;
     justify-content: space-between;
-    height: 10vh;
+    height: 8vh;
     padding-left: 5vh;
       padding-right: 5vh;}
     .burger{z-index: 10;
@@ -62,7 +62,7 @@ nav{position: fixed;
                 display: block;
                 position: fixed;
                 text-align: center!important;
-                top: -2%;
+                top: -3%;
                 left: -1%;
                 height: 100%;
                 width: 100%;

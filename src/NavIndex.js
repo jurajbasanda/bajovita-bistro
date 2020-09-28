@@ -3,7 +3,7 @@ import './nav.css';
 import {Link} from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import logo from './imgs/bajovitaBistroLogo.jpg'
+import logo from './imgs/bajovitaBistroLogo.png'
 
 const Nav = () =>{
     AOS.init({
