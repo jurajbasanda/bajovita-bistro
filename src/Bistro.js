@@ -51,14 +51,15 @@ export default function Bistro() {
     </li>
                 </ul>
                  <ul data-aos="slide-right">
+                 <li><h2>Covid-19 zmenena otváracia doba</h2></li>
+                 <li> Pondelok až Sobota 12:00-19:30 </li>
+                 <li>Ne  14:00-18:30</li>
                  <li><h2>Otváracie hodiny</h2></li>
-                    <li>Po-Štv	9:00-21:00</li>
-                    <li>Pia	9:00-22:00</li>
-                    <li>So	9:00-22:00</li>
+                    <li>Po-Štv	12:00-21:00</li>
+                    <li>Pia	12:00-22:00</li>
+                    <li>So	12:00-22:00</li>
                     <li>Ne	14:00-20:00</li>
-                                      {/**  <li><h3>COVID-19 Zmenena otváracia doba</h3></li>
-                                        <li> Pondelok až Sobota 13:00-19:00 </li>
-                                            <li>Ne  14:00-19:00</li> */}
+                                     
                     
                  </ul>
             </section>

@@ -7,6 +7,7 @@ export default function FixedFood() {
 
   return (
    <div className="fixedFood" data-aos="fade-left">
+   
             <a href='https://www.bistro.sk/bajovita-bistro/'><img src={bistrosk} alt="Bistro donaska" srcSet=""/></a>
             </div>
   );

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
-import './app.css';
+import './App.css';
 //Links
 import NavIndex from './NavIndex';
 import Contact from './Contact';
@@ -13,9 +13,9 @@ import NoMatch from './NoMatch';
 //Imgs
 import EshopImg from './imgs/bajovita.jpeg';
 import BajovitaImg from './imgs/bajovitaBistroLogo.png';
-import NoeImg from './imgs/noe.jpeg'
+//import NoeImg from './imgs/noe.jpeg'
 
-import backImg2 from './imgs/health-food.jpeg';
+//import backImg2 from './imgs/health-food.jpeg';
 import FixedFood from './FixedFood';
 import Reviews from './Reviews';
 

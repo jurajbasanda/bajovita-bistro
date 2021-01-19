@@ -2,15 +2,25 @@ $white:#ECECEC;
 $black:rgb(54, 54, 54);
 $orange:#cc6600;
 $navi:#3b3b3bc0;
+.delivery{
+    margin-top: 10vh;
+   width: 100%;
+   height: 100%;
+}
+iframe{height: 110vh;
+        border:none;}
 .firstSection{
     background-image: url(./imgs/Bajovita-first-bg.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     ul{background-color: $navi;
         text-align: center;
         width: 60%;
@@ -29,8 +39,8 @@ $navi:#3b3b3bc0;
 }
 .secondSection{
 display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 1fr;
 justify-content: center;
 align-items:center;
     text-align: center;
@@ -59,7 +69,7 @@ align-items:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 width: 100%;
-height: 40vh;}
+height: 30vh;}
 .projects{
     display: flex;
     flex-direction: column;
