@@ -8,8 +8,12 @@ import Contact from './Contact';
 import Nav from './Nav';
 import Produkty from './produkty'
 //Imgs
-import menu1 from './imgs/menu1.jpg';
-import menu2 from './imgs/fullmenu.jpeg';
+import menu1 from './imgs/menu-small.gif';
+import menu2 from './imgs/napoj-jedlo-menu-full.gif';
+import address from './imgs/address.png'
+import time from './imgs/time.png'
+import prehliadka from './imgs/door.png'
+import hashtag from './imgs/hashtag.png'
 import galleryImg0 from './imgs/bistroBG.jpeg'
 import galleryImg2 from './imgs/fixed-bg-meat.jpg';
 import galleryImg3 from './imgs/burger.jpeg';
@@ -39,26 +43,28 @@ export default function Bistro() {
             <section className='firstB' >
             <FixedFood></FixedFood>
             <ul data-aos="slide-right">
-                    <li><h2>Kde nás nájdete</h2></li>
+          <img src={address} alt='Kde nas najdete' />
                     <li>Pavla Horova 21</li>
                     <li>Prešov</li>
                     <li>Slovakia</li>
                     <li>T.č.: <a href='tel:+421918 971 923 '>0918 971 923</a></li>
                     <li>Email: <a href='mailto:bajovitabistro@gmail.com'> bajovitabistro@gmail.com</a></li>
                     <li className='socialNetworks'>
+                    
       <a href="https://www.facebook.com/bajovitaobchod/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/bajovitabistro/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i> </a>
     </li>
                 </ul>
                  <ul data-aos="slide-right">
-                 <li><h2>Covid-19 zmenena otváracia doba</h2></li>
-                 <li> Pondelok až Sobota 12:00-19:30 </li>
-                 <li>Ne  14:00-18:30</li>
-                 <li><h2>Otváracie hodiny</h2></li>
+          <img src={time} alt='Otvaracie hodiny' />
                     <li>Po-Štv	12:00-21:00</li>
                     <li>Pia	12:00-22:00</li>
                     <li>So	12:00-22:00</li>
                     <li>Ne	14:00-20:00</li>
+                 <li><h2>Covid-19 zmenena otváracia doba</h2></li>
+                 <li> PO - SO 12:00-19:00 </li>
+                 <li>NE  Zatvorené</li>
+            
                                      
                     
                  </ul>
@@ -98,6 +104,7 @@ export default function Bistro() {
                 <div className='fixed-bg'></div>
 
                 <Produkty></Produkty>
+                <div className='fixed-bg'></div>
 
             <section className='menu' id='Menu'>
                 <h1>Donáška</h1>
@@ -114,6 +121,8 @@ export default function Bistro() {
                 </div>
 
             </section>
+            <div className='fixed-bg'></div>
+
             <Contact></Contact>
         </main>
     )

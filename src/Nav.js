@@ -20,7 +20,7 @@ const Nav = () =>{
         return(
             <nav data-aos="fade-down">
             
-                    <Link to='/'><div className='logo' ><img src={logo} key={logo} alt="Bajovita Bistro"/></div ></Link>
+                    <a href='https://bajovitabistro.sk'><div className='logo' ><img src={logo} key={logo} alt="Bajovita Bistro"/></div ></a>
                 
                 <ul className="nav_links">
                     <a href='#Onas'><li>O Nás</li></a>

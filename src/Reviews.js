@@ -28,9 +28,10 @@ return (
             <div className='reviews-list'>  
           {/*<iframe src={fb4} title="review" width="500" height="220"  scrolling="no" frameBorder="0"  allow="encrypted-media"></iframe>*/}
           {reviews.map(review =>(
-                      <div className='review-item'>
+                      <div className='review-item'
+                      key={review.disc}>
                       <a href={review.link} target='_blank' rel="noopener noreferrer">
-                      <i class="far fa-user"></i>                  
+                      <i className="far fa-user"></i>                  
                       <h3>{review.name}</h3>
                     <p>{review.disc}</p>
                       </a>

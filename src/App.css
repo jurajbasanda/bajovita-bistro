@@ -1,7 +1,20 @@
+.delivery {
+  margin-top: 10vh;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  height: 110vh;
+  border: none;
+}
+
 .firstSection {
-  background-image: url(./imgs/Bajovita-first-bg.jpg);
+  background-image: url(./imgs/cakes.jpeg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -15,45 +28,58 @@
           justify-content: center;
 }
 
+.firstSection img {
+  max-width: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .firstSection ul {
-  background-color: #3b3b3bc0;
-  text-align: center;
-  width: 60%;
+  background-color: #3b3b3bd7;
+  position: absolute;
+  left: 10rem;
+  width: 50%;
+  font-size: 2.3rem;
+  text-align: left;
+}
+
+.firstSection ul button {
   font-size: 2.5rem;
-  line-height: 6rem;
+  color: #cc6600;
 }
 
 .firstSection ul li {
-  color: #cc6600;
-}
-
-.firstSection ul li:hover {
-  color: #ECECEC;
-}
-
-.firstSection ul li:hover i {
-  color: #cc6600;
+  color: #ececec;
 }
 
 .firstSection ul i {
-  color: #ECECEC;
+  color: #ececec;
 }
 
 .secondSection {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   text-align: center;
   padding-top: 2vh;
+  height: 40vh;
+}
+
+.secondSection img {
+  width: 3.3rem;
+  margin: 1rem;
 }
 
 .secondSection ul {
@@ -73,8 +99,9 @@
 }
 
 .prehliadka h2 {
+  margin: 0;
   text-decoration: underline;
-  color: #cc6600;
+  color: #ececec;
 }
 
 .prehliadka h2:hover {
@@ -110,7 +137,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
 }
 
 .projects {
@@ -166,18 +193,27 @@
     display: none;
   }
   .secondSection {
+    height: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-bottom: 25vh;
+  }
+  .secondSection ul {
+    margin-bottom: 7vh;
   }
 }
 
 @media screen and (max-width: 800px) {
   .firstSection ul {
-    width: 80%;
+    position: absolute;
+    left: 0rem;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) and (max-width: 780px) {
   .projects-group {
     display: -ms-grid;
     display: grid;
@@ -193,7 +229,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) and (max-width: 420px) {
   .secondSection {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;

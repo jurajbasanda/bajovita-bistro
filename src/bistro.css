@@ -27,9 +27,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -39,6 +39,11 @@
 .firstB ul {
   background-color: #302f2fc9;
   padding-bottom: 10px;
+}
+
+.firstB ul img {
+  width: 3.3rem;
+  margin: 1rem;
 }
 
 .Onas {
@@ -177,7 +182,6 @@
   padding-right: 20vh;
   padding-bottom: 15vh;
   padding-top: 10vh;
-  border-top: white 1px solid;
 }
 
 .menu h1 {
@@ -233,7 +237,7 @@
 }
 
 .menu .menu-group .menuImg {
-  max-width: 600px;
+  max-width: 300px;
 }
 
 @media screen and (max-width: 1030px) {

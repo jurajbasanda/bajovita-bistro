@@ -1,53 +1,61 @@
-$white:#ECECEC;
-$black:rgb(54, 54, 54);
-$orange:#cc6600;
-$navi:#302f2fc9;
-.contact{display: flex;
-    flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-color: $navi;
-        padding-top:5rem;
-        
-    
+$white: #ececec;
+$black: rgb(54, 54, 54);
+$orange: #cc6600;
+$navi: #302f2fc9;
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: $navi;
+	padding-top: 5rem;
 
-    .contact-group-form{display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        max-width:1020px ;
-        ul{display: flex;
-            flex-direction: column;
-            justify-content: center;
-        align-items: center;}
+	.contact-group-form {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		max-width: 1020px;
+		ul {
+            margin:1rem !important;
+            padding:0px !important;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 3.3rem;
+				margin: 1rem;
+			}
+		}
 
-        iframe{
-            width:100%;
-             height:80%; 
-             border:0;
-             justify-self: center;
-             align-self: center;
-        }
-        .madeby{
-            justify-self: flex-end;
-            align-self: flex-end;
-            margin-bottom: 5px;
-            a{color:$white;
-            font-size: 0.9rem;}
-        }
-    }
-    
-
+		iframe {
+			width: 100%;
+			height: 80%;
+			border: 0;
+			justify-self: center;
+			align-self: center;
+		}
+		.madeby {
+			justify-self: flex-end;
+			align-self: flex-end;
+			margin-bottom: 5px;
+			a {
+				color: $white;
+				font-size: 0.9rem;
+			}
+		}
+	}
 }
- @media screen and (max-width:1030px){
-     .contact{
-    
-    .contact-group-form{ 
-        grid-template-columns: 1fr;
-        grid-template-rows: 100%;}
-    }
+@media screen and (max-width: 1030px) {
+	.contact {
+		.contact-group-form {
+			grid-template-columns: 1fr;
+			grid-template-rows: 100%;
+		}
+	}
 }
