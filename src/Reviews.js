@@ -23,7 +23,7 @@ const reviews = [
                   link:'https://www.facebook.com/joshco1/posts/2313531818668540'
                 }]
 return (
-            <section className='fb'>
+            <section className='fb' id='recenzie'>
             <h1>Recenzie</h1>
             <div className='reviews-list'>  
           {/*<iframe src={fb4} title="review" width="500" height="220"  scrolling="no" frameBorder="0"  allow="encrypted-media"></iframe>*/}

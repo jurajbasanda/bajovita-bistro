@@ -62,18 +62,17 @@ const Home = () => {
 			<section className='firstSection'>
 				<FixedFood></FixedFood>
 				<ul data-aos='fade-up'>
-					
-						<li> Bajovita bistro je priestor kde si každý nájde svoje miesto </li>
-            <a href='/bistro/#menu'>
-            <button>Objednaj si u nás</button>
-					</a>
+					<li> Bajovita bistro je priestor kde si každý nájde svoje miesto </li>
+					<Link to='/bistro#menu'>
+						<button>Objednaj si u nás</button>
+					</Link>
 				</ul>
 			</section>
 
 			<section id='Onas' className='secondSection'>
 				<ul data-aos='fade-up'>
 					<li>
-          <img src={hashtag} alt='socialne siete' />
+						<img src={hashtag} alt='socialne siete' />
 					</li>
 					<li className='socialNetworks'>
 						<a
@@ -90,8 +89,8 @@ const Home = () => {
 						>
 							<i className='fab fa-instagram'></i>{' '}
 						</a>
-          </li>
-          <li>T.č.: 0918 971 923</li>
+					</li>
+					<li>T.č.: 0918 971 923</li>
 					<li>
 						Email:{' '}
 						<a href='mailto:bajovitabistro@gmail.com'>
@@ -112,7 +111,6 @@ const Home = () => {
 					<li>Pavla Horova 21</li>
 					<li>Prešov</li>
 					<li>Slovakia</li>
-					
 				</ul>
 
 				<ul data-aos='fade-up'>
@@ -123,14 +121,15 @@ const Home = () => {
 					{
 						//<li><h2>Otváracie hodiny</h2></li>
 					}
-          <li> PO - SO 12:00-19:00 </li>
-          <li>NE  Zatvorené</li>
-              {  //
-					// <li>Po-Štv 9:00-21:00</li>
-					// <li>Pia 9:00-22:00</li>
-					// <li>So 9:00-22:00</li>
-          // <li>Ne 14:00-20:00</li>
-        }
+					<li> PO - SO 12:00-19:00 </li>
+					<li>NE Zatvorené</li>
+					{
+						//
+						// <li>Po-Štv 9:00-21:00</li>
+						// <li>Pia 9:00-22:00</li>
+						// <li>So 9:00-22:00</li>
+						// <li>Ne 14:00-20:00</li>
+					}
 				</ul>
 				{/**<ul data-aos="slide-right">
           <li><h3>COVID-19 Zmenena otváracia doba</h3></li>
