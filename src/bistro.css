@@ -38,7 +38,13 @@
 
 .firstB ul {
   background-color: #302f2fc9;
+  text-align: center;
   padding-bottom: 10px;
+}
+
+.firstB ul h1 {
+  text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .firstB ul img {
@@ -307,9 +313,9 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 2px solid #ECECEC;
   }
   .firstB ul {

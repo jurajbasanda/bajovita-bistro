@@ -18,7 +18,11 @@
           align-items: center;
 }
 
-.fixedFood img {
+.fixedFood button {
+  padding: 0;
+}
+
+.fixedFood button img {
   width: 7rem;
   margin: 1vh;
 }

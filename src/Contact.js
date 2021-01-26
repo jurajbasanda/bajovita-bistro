@@ -32,7 +32,7 @@ export default function Contact() {
 					<i className='fab fa-instagram'></i>{' '}
 				</a>
 			</div>
-			<article className='contact-group-form'>
+			<div className='contact-group-form'>
 				<iframe
 					src={map}
 					title={map}
@@ -86,7 +86,7 @@ export default function Contact() {
 					{' '}
 					Made by @Juraj Basanda
 				</a>
-			</article>
+			</div>
 		</section>
 	)
 }

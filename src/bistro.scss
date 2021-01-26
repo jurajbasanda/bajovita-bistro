@@ -20,7 +20,10 @@ $navi:#302f2fc9;
     align-items: flex-end;
     border-bottom: 2px solid $white;
         ul{background-color: $navi;
+            text-align: center;
             padding-bottom:10px ;
+            h1{text-decoration: none;
+                font-size: 1.4rem;}
             img {
                 width: 3.3rem;
                 margin: 1rem;
@@ -162,8 +165,8 @@ background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: center;
     
-    align-items: flex-start;
         border-bottom: 2px solid $white;
             ul{background-color: $navi;
                 padding-bottom:0px ;}

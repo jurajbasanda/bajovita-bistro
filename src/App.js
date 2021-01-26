@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as BRouter, Switch, Route } from 'react-router-dom'
+import {
+	BrowserRouter as BRouter,
+	Switch,
+	Route,
+	Redirect,
+} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
@@ -29,11 +34,19 @@ function App() {
 	return (
 		<BRouter>
 			<Switch>
-				<Route path='/' exact component={Home} />
-				<Route path='/bistro' component={Bistro} />
+				<Route path='/' exact component={Home}>
+					<Home />
+				</Route>
+				<Route path='/bistro' component={Bistro}>
+					<Bistro />
+				</Route>
 				<Route path='*'>
 					<NoMatch />
 				</Route>
+				<Route path='/404'>
+					<NoMatch />
+				</Route>
+				<Redirect to='/404' />
 			</Switch>
 		</BRouter>
 	)
@@ -62,7 +75,13 @@ const Home = () => {
 			<section className='firstSection'>
 				<FixedFood></FixedFood>
 				<ul data-aos='fade-up'>
-					<li> Bajovita bistro je priestor kde si každý nájde svoje miesto </li>
+					<li>
+						{' '}
+						<h1>
+							{' '}
+							Bajovita bistro je priestor kde si každý nájde svoje miesto
+						</h1>{' '}
+					</li>
 					<Link to='/bistro#menu'>
 						<button>Objednaj si u nás</button>
 					</Link>
@@ -148,7 +167,7 @@ const Home = () => {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							<h2>Virtualna prehliadka</h2>
+							<button>Virtualna prehliadka</button>
 						</a>
 					</li>
 				</ul>
