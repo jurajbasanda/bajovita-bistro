@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import './bistro.css'
+//Styles
+import './Styles/bistro.css'
 
 //Links
 import Contact from './Contact'
@@ -77,11 +78,7 @@ export default function Bistro() {
 						T.č.: <a href='tel:+421918 971 923 '>0918 971 923</a>
 					</li>
 					<li>
-						Email:{' '}
-						<a href='mailto:bajovitabistro@gmail.com'>
-							{' '}
-							bajovitabistro@gmail.com
-						</a>
+						Email: <a href='mailto:bajovitabistro@gmail.com'> bajovitabistro@gmail.com</a>
 					</li>
 					<li className='socialNetworks'>
 						<a
@@ -105,12 +102,11 @@ export default function Bistro() {
 				<article className='Onas-group' data-aos='flip-up'>
 					<h1>O nás</h1>
 					<p>
-						Bajovita bistro je rodinný podnik, takže si predstavte ho ako veľkú
-						obývačku, kde sa môžete stretnúť so svojimi priateľmi podeliť sa o
-						svoje radosti aj starosti a popritom Vás s radosťou obslúžime
-						pripravíme chutné jedlo (napr. Burger, wrap Lavaš), nápoje,
-						vynikajúcu na Slovensku praženú kávu, domáce koláče a čerstvo
-						upečené pečivo, croissanty a pivo BERNARD
+						Bajovita bistro je rodinný podnik, takže si predstavte ho ako veľkú obývačku,
+						kde sa môžete stretnúť so svojimi priateľmi podeliť sa o svoje radosti aj
+						starosti a popritom Vás s radosťou obslúžime pripravíme chutné jedlo (napr.
+						Burger, wrap Lavaš), nápoje, vynikajúcu na Slovensku praženú kávu, domáce
+						koláče a čerstvo upečené pečivo, croissanty a pivo BERNARD
 					</p>
 					<div
 						className='fixed-bg'
@@ -118,18 +114,18 @@ export default function Bistro() {
 					></div>
 					<p>
 						{' '}
-						Zároveň pracujeme už 17 rokov v oblasti v oblasti regeneračného
-						zdravia. Poradíme Vám v rámci eventov ako funkčne žiť zdravý a
-						pohodový život v zapamätateľnej a realizovateľnej forme. Bajovita
-						bistro je projekt pre našich a Vašich priateľov, ktorý môže zvýšiť
-						kvalitu života na sídlisku kde to málo kto očakáva. Našou snahou je
-						spájať rodiny priateľov s možnosťou osláv narodenín a rodinných
-						stretnutí, keďže domáce návštevy sa už tak nenosia ako kedysi.
+						Zároveň pracujeme už 17 rokov v oblasti v oblasti regeneračného zdravia.
+						Poradíme Vám v rámci eventov ako funkčne žiť zdravý a pohodový život v
+						zapamätateľnej a realizovateľnej forme. Bajovita bistro je projekt pre našich
+						a Vašich priateľov, ktorý môže zvýšiť kvalitu života na sídlisku kde to málo
+						kto očakáva. Našou snahou je spájať rodiny priateľov s možnosťou osláv
+						narodenín a rodinných stretnutí, keďže domáce návštevy sa už tak nenosia ako
+						kedysi.
 					</p>
 
 					<p>
-						Môžete si u nás vychutnať aj menu z chleba Lavaš, alebo si ho
-						zakúpiť a experimentovať doma.
+						Môžete si u nás vychutnať aj menu z chleba Lavaš, alebo si ho zakúpiť a
+						experimentovať doma.
 					</p>
 				</article>
 				<article className='gallery-group' data-aos='flip-up'>
@@ -154,12 +150,7 @@ export default function Bistro() {
 							rel='noopener noreferrer'
 						>
 							{' '}
-							<img
-								className='bistrosk'
-								src={bistroD}
-								alt='bistro'
-								key={bistroD}
-							/>
+							<img className='bistrosk' src={bistroD} alt='bistro' key={bistroD} />
 						</a>
 						<p>
 							<a
@@ -167,20 +158,18 @@ export default function Bistro() {
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-                            <button>&#62; Naše chutné výrobky si môžte objedna TU &#60;{' '}</button>
+								<button>&#62; Naše chutné výrobky si môžte objedna TU &#60; </button>
 							</a>
 							<br />
 							Alebo volajte priamo k nám do predajne na číslo
-							<br />{' '}
-							<a href='tel:+421918 971 923 '> &#62; 0918 971 923 &#60;</a>
+							<br /> <a href='tel:+421918 971 923 '> &#62; 0918 971 923 &#60;</a>
 							<br />
 							<a href={menu2} target='_blank' rel='noopener noreferrer'>
-							<button>Pozi Menú{' '}
-                                </button>
-                                </a>
+								<button>Pozi Menú </button>
+							</a>
 						</p>
-                    </div>
-                    
+					</div>
+
 					<a href={menu2} target='_blank' rel='noopener noreferrer'>
 						<img className='menuImg' src={menu1} alt='Bajovita Bistro menu' />
 					</a>

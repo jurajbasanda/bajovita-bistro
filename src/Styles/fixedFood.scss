@@ -1,0 +1,17 @@
+.fixedFood {
+	display: flex;
+	z-index: 2;
+	position: fixed;
+	bottom: 1vh;
+	right: 1vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	button {
+		padding: 0;
+		img {
+			width: 7rem;
+			margin: 1vh;
+		}
+	}
+}

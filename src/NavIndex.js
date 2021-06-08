@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import './nav.css'
 import { Link } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import logo from './imgs/bajovitaBistroLogo.png'
+//Styles
+import './Styles/nav.css'
 
 const Nav = () => {
 	AOS.init({

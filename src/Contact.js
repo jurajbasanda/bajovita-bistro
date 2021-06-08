@@ -1,5 +1,6 @@
 import React from 'react'
-import './contact.css'
+//Styles
+import './Styles/contact.css'
 //images
 import address from './imgs/address.png'
 import time from './imgs/time.png'
@@ -49,11 +50,7 @@ export default function Contact() {
 					<li>Slovakia</li>
 					<li>T.č.: 0918 971 923</li>
 					<li>
-						Email:{' '}
-						<a href='mailto:bajovitabistro@gmail.com'>
-							{' '}
-							bajovitabistro@gmail.com
-						</a>
+						Email: <a href='mailto:bajovitabistro@gmail.com'> bajovitabistro@gmail.com</a>
 					</li>
 				</ul>
 				<ul>
@@ -65,7 +62,7 @@ export default function Contact() {
 				</ul>
 
 				<ul>
-                <li>
+					<li>
 						<img src={time} alt='Otvaracie hodiny' />
 					</li>
 					<li>Po-Štv 12:00-21:00</li>

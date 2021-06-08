@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react'
-import {
-	BrowserRouter as BRouter,
-	Switch,
-	Route,
-	Redirect,
-} from 'react-router-dom'
+import { BrowserRouter as BRouter, Switch, Route, Redirect } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import AOS from 'aos'
-
+//Styles
 import 'aos/dist/aos.css'
-import './App.css'
+import './Styles/App.css'
 //Links
 import NavIndex from './NavIndex'
 import Contact from './Contact'
@@ -77,10 +72,7 @@ const Home = () => {
 				<ul data-aos='fade-up'>
 					<li>
 						{' '}
-						<h1>
-							{' '}
-							Bajovita bistro je priestor kde si každý nájde svoje miesto
-						</h1>{' '}
+						<h1> Bajovita bistro je priestor kde si každý nájde svoje miesto</h1>{' '}
 					</li>
 					<Link to='/bistro#menu'>
 						<button>Objednaj si u nás</button>
@@ -111,11 +103,7 @@ const Home = () => {
 					</li>
 					<li>T.č.: 0918 971 923</li>
 					<li>
-						Email:{' '}
-						<a href='mailto:bajovitabistro@gmail.com'>
-							{' '}
-							bajovitabistro@gmail.com
-						</a>
+						Email: <a href='mailto:bajovitabistro@gmail.com'> bajovitabistro@gmail.com</a>
 					</li>
 				</ul>
 
@@ -184,20 +172,16 @@ const Home = () => {
 					>
 						<ul>
 							<li>
-								<img
-									src={EshopImg}
-									key={EshopImg}
-									alt='Bajovita Eshop Presov'
-								/>
+								<img src={EshopImg} key={EshopImg} alt='Bajovita Eshop Presov' />
 							</li>
 							<li>
 								<h3>Eshop Bajovita</h3>
 							</li>
 							<li>
-								Eshop ponúka produkty zdravej výživy nie len pre aktívnych
-								športovcov, ale pre nás všetkých ktorí sa rozhodli udržať si
-								zdravie a výborný biologický vek čo do najvyššieho veku s
-								možnosťou priameho nákupu v priestoroch Bajovita bistro.
+								Eshop ponúka produkty zdravej výživy nie len pre aktívnych športovcov, ale
+								pre nás všetkých ktorí sa rozhodli udržať si zdravie a výborný biologický
+								vek čo do najvyššieho veku s možnosťou priameho nákupu v priestoroch
+								Bajovita bistro.
 							</li>
 							<li>
 								<button>
@@ -221,9 +205,8 @@ const Home = () => {
 								<h3>Bajovita - bistro</h3>
 							</li>
 							<li>
-								Je veľmi príjemné mať možnosť stráviť spoločné chvíle pri dobrom
-								jedle vynikajúcej káve s pohárom dobrého vína , alebo piva a
-								príjemnou obsluhou.
+								Je veľmi príjemné mať možnosť stráviť spoločné chvíle pri dobrom jedle
+								vynikajúcej káve s pohárom dobrého vína , alebo piva a príjemnou obsluhou.
 							</li>
 							<li>
 								<button>
